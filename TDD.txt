@@ -20,3 +20,6 @@ text_blah.py 가 test code
 피보나치 수열
 
 Do the simplest thing that could possibily work.
+
+TDD의 좋은 점 :)
+production 코드를 먼저 만든 뒤 test 코드를 짜면, user 입장에서 생각하기 어렵다. 코드가 어떻게 쓰일지 상상하면서 만드는 것 중요하다. test case를 적는 과정에는, 코드 완성 이후 사용 양상을 상상하면 좋다.
