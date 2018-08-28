@@ -16,11 +16,23 @@ def test_잔액_누적():
     m.run("동전 100")
     assert "잔액은 200원입니다" == m.run("잔액")
 
-def test_음료_뽑기():
+def test_음료_커피_뽑기():
     m = VendingMachine()
     m.run("동전 500")
     assert "커피가 나왔습니다" == m.run("음료 커피")
     assert "잔액은 350원입니다" == m.run("잔액")
+
+def test_음료_우유_뽑기():
+    m = VendingMachine()
+    m.run("동전 500")
+    assert "우유가 나왔습니다" == m.run("음료 우유")
+    assert "잔액은 300원입니다" == m.run("잔액")
+
+def test_음료_밀크커피_뽑기():
+    m = VendingMachine()
+    m.run("동전 500")
+    assert "밀크커피가 나왔습니다" == m.run("음료 밀크커피")
+    assert "잔액은 200원입니다" == m.run("잔액")
 
 def test_모르는_음료_뽑기():
     m = VendingMachine()
